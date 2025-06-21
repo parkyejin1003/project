@@ -28,8 +28,10 @@
 
 <!-- 제이쿼리 3.7 CDN -->
 <script src='https://code.jquery.com/jquery-3.7.0.min.js' crossorigin='anonymous'></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 <!-- 로컬 CSS -->
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 <link rel='stylesheet' href='./css/style.css'/>
 
 <!-- 로컬 js -->
@@ -122,6 +124,46 @@
              </div>
         </div>
     </header>
+    <div id="content">
+        <section class="section01">
+            <div class="swiper section01_swiper_Frame">
+            <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background-image: url('./bannerImg/bannerImg1_1.jpg');">
+                <div class="inner_wrap">
+                    <div>
+                        <p>서울 역사 편찬원</p>
+                        <h3>2024 Best 책 투표</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide" style="background-image: url('./bannerImg/bannerImg1_2.jpg');">
+                <div class="inner_wrap">
+                    <div>
+                        <p>서울 역사를 수집&middot;조사&middot;연구&middot;편찬하는</p>
+                        <h3>서울역사편찬원이 함께 합니다</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide" style="background-image: url('./bannerImg/bannerImg1_3.jpg');">
+                <div class="inner_wrap">
+                    <div>
+                        <p>서울 역사를 수집&middot;조사&middot;연구&middot;편찬하는</p>
+                        <h3>서울역사편찬원이 함께 합니다</h3>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="controller_wrap">
+            <div>
+                <div class="swiper-prevBtn"></div>
+                <div class="swiper_pagination"></div>
+                <div class="swiper-nextBtn"></div>
+                <button class="swiper_paussBtn"></button>
+            </div>
+        </div>
+        </section>
+    </div>
 </div>
 
 </body>
