@@ -30,8 +30,8 @@
 <script src='https://code.jquery.com/jquery-3.7.0.min.js' crossorigin='anonymous'></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 <!-- 로컬 CSS -->
- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 <link rel='stylesheet' href='./css/style.css'/>
 
 <!-- 로컬 js -->
@@ -127,41 +127,245 @@
     <div id="content">
         <section class="section01">
             <div class="swiper section01_swiper_Frame">
-            <div class="swiper-wrapper">
-            <div class="swiper-slide" style="background-image: url('./bannerImg/bannerImg1_1.jpg');">
-                <div class="inner_wrap">
-                    <div>
-                        <p>서울 역사 편찬원</p>
-                        <h3>2024 Best 책 투표</h3>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-image: url(./img/bannerImg1_1.jpg);">
+                        <div class="inner_wrap">
+                            <div>
+                                <p>서울 역사 편찬원</p>
+                                <h3>2024 best 책 투표</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" style="background-image: url(./img/bannerImg1_2.jpg);">
+                        <div class="inner_wrap">
+                            <div>
+                                <p>서울 역사를 수집&middot;조사&middot; 연구&middot;편찬원</p>
+                                <h3>서울역사편찬원이 함께합니다</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" style="background-image: url(./img/bannerImg1_3.jpg);">
+                        <div class="inner_wrap">
+                            <div>
+                                <p>서울 역사를 수집&middot;조사&middot; 연구&middot;편찬원</p>
+                                <h3>서울역사편찬원이 함께합니다</h3>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="swiper-slide" style="background-image: url('./bannerImg/bannerImg1_2.jpg');">
-                <div class="inner_wrap">
-                    <div>
-                        <p>서울 역사를 수집&middot;조사&middot;연구&middot;편찬하는</p>
-                        <h3>서울역사편찬원이 함께 합니다</h3>
+            <div class="controller_wrap">
+                <div>
+                    <div class="swiper-prevBtn"></div>
+                    <div class="swiper_pagination"></div>
+                    <div class="swiper-nextBtn"></div>
+                    <button class="swiper_pauseBtn"></button>
+                </div>
+            </div>
+        </section>
+        <section class="section02">
+            <div class="container2">
+                <h2>자주 찾는 서비스</h2>
+                <div class="history_icon_wrap">
+                     <ul>
+                        <li>
+                            <a href="#">
+                                <p class="icon icon1"></p>
+                                <div class="icon_tit">타임라인</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p class="icon  icon2"></p>
+                                <div class="icon_tit">역사연표</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p class="icon  icon3"></p>
+                                <div class="icon_tit">지명사전</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p class="icon  icon4"></p>
+                                <div class="icon_tit">E-book</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p class="icon  icon5"></p>
+                                <div class="icon_tit">오디오북</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p class="icon  icon6"></p>
+                                <div class="icon_tit">사진자료</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p class="icon  icon7"></p>
+                                <div class="icon_tit">연구논문</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p class="icon  icon8"></p>
+                                <div class="icon_tit">ENGLISH</div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="section03">
+            <div class="container">
+                <div class="sec3_tit_wrap">
+                    <h2>신간 소개</h2>
+                    <a href="#">전체보기 <span class="arrow"></span></a>
+                </div>
+                <div class="sec3_slider_wrap">
+                    <!-- Swiper -->
+                    <div class="swiper sec3Swiper">
+                        <div class="swiper-wrapper">
+                        <div class="swiper-slide"><a href="#"><img src="./img/newbook/newbook1.jpg" alt=""></a>
+                        <div class="slider_dec">
+                            <h3>일제감정기 상경사의 경성 체험과 생활공간</h3>
+                            <p>김태웅 외</p>
+                        </div>
+                        </div>
+                        <div class="swiper-slide"><a href="#"><img src="./img/newbook/newbook2.jpg" alt=""></a>
+                        <div class="slider_dec">
+                            <h3>일제감정기 상경사의 경성 체험과 생활공간</h3>
+                            <p>김태웅 외</p>
+                        </div>
+                        </div>
+                        <div class="swiper-slide"><a href="#"><img src="./img/newbook/newbook3.jpg" alt=""></a>
+                        <div class="slider_dec">
+                            <h3>일제감정기 상경사의 경성 체험과 생활공간</h3>
+                            <p>김태웅 외</p>
+                        </div>
+                        </div>
+                        <div class="swiper-slide"><a href="#"><img src="./img/newbook/newbook04.jpg" alt=""></a>
+                        <div class="slider_dec">
+                            <h3>일제감정기 상경사의 경성 체험과 생활공간</h3>
+                            <p>김태웅 외</p>
+                        </div>
+                        </div>
+                        <div class="swiper-slide"><a href="#"><img src="./img/newbook/newbook05.jpg" alt=""></a>
+                        <div class="slider_dec">
+                            <h3>일제감정기 상경사의 경성 체험과 생활공간</h3>
+                            <p>김태웅 외</p>
+                        </div>
+                        </div>
+                        <div class="swiper-slide"><a href="#"><img src="./img/newbook/newbook06.jpg" alt=""></a>
+                        <div class="slider_dec">
+                            <h3>일제감정기 상경사의 경성 체험과 생활공간</h3>
+                            <p>김태웅 외</p>
+                        </div>
+                        </div>
+                        <div class="swiper-slide"><a href="#"><img src="./img/newbook/newbook07.jpg" alt=""></a>
+                        <div class="slider_dec">
+                            <h3>일제감정기 상경사의 경성 체험과 생활공간</h3>
+                            <p>김태웅 외</p>
+                        </div>
+                        </div>
+                        <div class="swiper-slide"><a href="#"><img src="./img/newbook/newbook08.jpg" alt=""></a>
+                        <div class="slider_dec">
+                            <h3>일제감정기 상경사의 경성 체험과 생활공간</h3>
+                            <p>김태웅 외</p>
+                        </div>
+                        </div>
+                        <div class="swiper-slide"><a href="#"><img src="./img/newbook/newbook09.jpg" alt=""></a>
+                        <div class="slider_dec">
+                            <h3>일제감정기 상경사의 경성 체험과 생활공간</h3>
+                            <p>김태웅 외</p>
+                        </div>
+                        </div>
+                        <div class="swiper-slide"><a href="#"><img src="./img/newbook/newbook10.jpg" alt=""></a>
+                        <div class="slider_dec">
+                            <h3>일제감정기 상경사의 경성 체험과 생활공간</h3>
+                            <p>김태웅 외</p>
+                        </div>
+                        </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="swiper-slide" style="background-image: url('./bannerImg/bannerImg1_3.jpg');">
-                <div class="inner_wrap">
-                    <div>
-                        <p>서울 역사를 수집&middot;조사&middot;연구&middot;편찬하는</p>
-                        <h3>서울역사편찬원이 함께 합니다</h3>
+        </section>
+        <section class="section04">
+            <div class="container">
+                <div class="notice">
+                    <div class="noticeTop notiNews">
+                        <h2>공지사항</h2>
+                        <a href="#">전체보기 <span class="arrow"></span></a>
+                    </div>
+                    <div class="noticeContent notiNewsCnt">
+                        <ul>
+                            <li>
+                                <div class="left">
+                                    <div class="day">05</div>
+                                    <div class="date">2025.06</div>
+                                </div>
+                                <div class="right">
+                                    <p>일반</p>
+                                    <div class="h3">
+                                        2025년 6월, 서울역사달력의 주인공 중명전
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="left">
+                                    <div class="day">30</div>
+                                    <div class="date">2025.04</div>
+                                </div>
+                                <div class="right">
+                                    <p>일반</p>
+                                    <div class="h3">
+                                        2025년 5월, 서울역사달력의 주인공인 구 벨기에 영사관
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="news">
+                    <div class="newsTop notiNews">
+                        <h2>편찬원뉴스</h2>
+                        <a href="#">전체보기 <span class="arrow"></span></a>
+                    </div>
+                    <div class="newsContent notiNewsCnt">
+                        <ul>
+                            <li>
+                                <div class="left">
+                                    <div class="day">17</div>
+                                    <div class="date">2025.06</div>
+                                </div>
+                                <div class="right">
+                                    <p>이벤트</p>
+                                    <div class="h3">
+                                        서울역사편찬원 2024 best 책 투표
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="left">
+                                    <div class="day">27</div>
+                                    <div class="date">2024.12</div>
+                                </div>
+                                <div class="right">
+                                    <p>보도자료</p>
+                                    <div class="h3">
+                                        2025년 5월, 70년대 ‘도시새마을운동’ 주역 11인의 생생한 증언 담은 구술자료집 발간
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            </div>
-        </div>
-        <div class="controller_wrap">
-            <div>
-                <div class="swiper-prevBtn"></div>
-                <div class="swiper_pagination"></div>
-                <div class="swiper-nextBtn"></div>
-                <button class="swiper_paussBtn"></button>
-            </div>
-        </div>
         </section>
     </div>
 </div>

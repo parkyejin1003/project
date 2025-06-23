@@ -1,3 +1,4 @@
+
 $(function(){
     let submenu = $('.headerBottomNav nav>ul>li');
     let sub=$('.headerBottomNav nav>ul>li>ul');
@@ -57,6 +58,21 @@ $(function(){
             swiper.autoplay.start();
             sp=0;
         }
+    });
+
+    var swiper = new Swiper(".sec3Swiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      breakpoints: {
+        768: {
+          slidesPerView: 2, //브라우저가 768보다 클때
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 3, //브라우저가 1024보다 클때
+          spaceBetween: 50,
+        },
+      },
     });
 
 })
