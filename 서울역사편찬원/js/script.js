@@ -1,4 +1,3 @@
-
 $(function(){
     let submenu = $('.headerBottomNav nav>ul>li');
     let sub=$('.headerBottomNav nav>ul>li>ul');
@@ -64,15 +63,65 @@ $(function(){
       slidesPerView: 1,
       spaceBetween: 30,
       breakpoints: {
-        768: {
-          slidesPerView: 2, //브라우저가 768보다 클때
-          spaceBetween: 40,
+        
+          768: {
+            slidesPerView: 2,  //브라우저가 768보다 클 때
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 3,  //브라우저가 1024보다 클 때
+            spaceBetween: 50,
+          },
         },
-        1024: {
-          slidesPerView: 3, //브라우저가 1024보다 클때
-          spaceBetween: 50,
-        },
+    });
+
+
+    var bullet=['강좌','답사','공모','논문']
+     var swiper1 = new Swiper(".tabslide", {
+      spaceBetween: 0,
+      
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,//사용자가 슬라이드를 조작해도 자동 넘김이 계속 유지
+      },
+      pagination: {
+        el: ".tab-pagination",
+        clickable: true,
+        renderBullet:function(index, className){
+          return `<div class=${className}><span>${bullet[index]}</span></div>`
+        }
+      },
+      observer:true,
+      observeParents:true,
+    });
+    let sp1=0;
+    $('.section05 .swiper_pauseBtn').click(function(){
+        if(sp1==0){
+            $(this).attr({class:"swiper_playBtn"})
+            swiper1.autoplay.stop();
+            sp1=1;
+        }else{
+            $(this).attr({class:"swiper_pauseBtn"})
+            swiper1.autoplay.start();
+            sp1=0;
+        }
+    });
+
+    var swiper2 = new Swiper(".tab_con2", {
+      pagination: {
+        el: ".swiper_pagination",
+        type: "fraction",
+      },
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+        
+      },
+      navigation: {
+        nextEl: ".swiper-nextBtn",
+        prevEl: ".swiper-prevBtn",
       },
     });
+
 
 })
