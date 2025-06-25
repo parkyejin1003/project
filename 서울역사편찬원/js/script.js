@@ -33,7 +33,7 @@ $(function(){
     //스와이퍼
     var swiper = new Swiper(".section01_swiper_Frame", {
       pagination: {
-        el: ".swiper_pagination",
+        el: ".swiper_pagination6",
         type: "fraction",
       },
       autoplay: {
@@ -42,8 +42,8 @@ $(function(){
         loop:true,
       },
       navigation: {
-        nextEl: ".swiper-nextBtn",
-        prevEl: ".swiper-prevBtn",
+        nextEl: ".section01 .swiper-nextBtn",
+        prevEl: ".section01 .swiper-prevBtn",
       },
     });
     let sp=0;
@@ -59,7 +59,7 @@ $(function(){
         }
     });
 
-    var swiper = new Swiper(".sec3Swiper", {
+    var swiper3 = new Swiper(".sec3Swiper", {
       slidesPerView: 1,
       spaceBetween: 30,
       breakpoints: {
@@ -76,8 +76,42 @@ $(function(){
     });
 
 
+    
+/* $('.tab_con2').on('touchstart touchmove touchend mousewheel wheel', function(e){
+  e.stopPropagation();
+}); */
+  var swiper2 = new Swiper(".tab_con2", {
+        pagination: {
+          el: ".swiper_pagination1",
+          type: "fraction",
+        },
+      
+        centeredSlides: true,
+        navigation: {
+          nextEl: ".tab_con2 .swiper-nextBtn1",
+          prevEl: ".tab_con2 .swiper-prevBtn1",
+        },
+        observer: true,
+        observeParents: true,
+  });
+
+   var swiper3 = new Swiper(".tab_con3", {
+        pagination: {
+          el: ".swiper_pagination3",
+          type: "fraction",
+        },
+      
+        centeredSlides: true,
+        navigation: {
+          nextEl: ".tab_con3 .swiper-nextBtn3",
+          prevEl: ".tab_con3 .swiper-prevBtn3",
+        },
+        observer: true,
+        observeParents: true,
+  });
+
     var bullet=['강좌','답사','공모','논문']
-     var swiper1 = new Swiper(".tabslide", {
+    var swiper1 = new Swiper(".tabslide", {
       spaceBetween: 0,
       
       autoplay: {
@@ -107,21 +141,34 @@ $(function(){
         }
     });
 
-    var swiper2 = new Swiper(".tab_con2", {
+    var swiper6 = new Swiper(".popupzonSwiper", {
       pagination: {
-        el: ".swiper_pagination",
-        type: "fraction",
+        el: ".swiper-pagination",
       },
       autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-        
-      },
-      navigation: {
-        nextEl: ".swiper-nextBtn",
-        prevEl: ".swiper-prevBtn",
+        delay: 3000,
       },
     });
+    let sp6=0;
+    $('.section06 .swiper_pauseBtn').click(function(){
+        if(sp6==0){
+            $(this).attr({class:"swiper_playBtn"})
+            swiper6.autoplay.stop();
+            sp6=1;
+        }else{
+            $(this).attr({class:"swiper_pauseBtn"})
+            swiper6.autoplay.start();
+            sp6=0;
+        }
+    });
 
+    //section06 more_Btn
 
+    let popup=$('.section06More')
+    $('.more').click(function(){
+      popup.fadeIn(500);
+    });
+    $('.closeBtn').click(function(){
+      popup.fadeOut(500);
+    });
 })
